@@ -172,7 +172,7 @@ def markovpy(initial_theta,step,lnpdf,pdf_params,
         #Sample
         pos, prob, state= sampler.run_mcmc(initial_position,nmarkovsamples,
                                            rstate0=numpy.random.mtrand.RandomState().get_state(),
-                                           lnprob0=lnprobs)
+                                           log_prob0=lnprobs)
         #Get chain
         chain= sampler.chain
     else:
