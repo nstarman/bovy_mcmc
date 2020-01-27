@@ -43,3 +43,4 @@ build/
 dist/
 bovy_mcmc.egg-info/
 *.ftpconfig
+/sftp-config.json
